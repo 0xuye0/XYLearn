@@ -62,3 +62,16 @@ int CMyList::Delete(int i)
 	length--;
 	return x;
 }
+
+void CMyList::Joseph(int i)
+{
+	int start = 1;
+	while (this->GetLength() != 1)
+	{
+		int m = (start + i - 1) % GetLength();
+		start = (m==0?length:m);
+		cout << this->GetValue(start) << ' ';
+		this->Delete(start );
+	}
+	cout << this->GetValue(1) << endl;
+}

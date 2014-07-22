@@ -12,6 +12,7 @@ public:
 	void Insert(int i, int key);
 	int Delete(int i=5);
 	int GetLength(){return length;}
+	void Joseph(int i);
 private:
 	int data[MAXSIZE];
 	int length;

@@ -63,16 +63,12 @@ void main()
 	//	cout << at.eof() << endl;*/
 	//}
 	//cout << sizeof(ios::pos_type) << endl;
-	int a[] = { 1, 4, 10 };
-	int *p = a;
-	char *b = "ahkz";
-	char *bb = new char[10];
-	for (int i = 0; i < 2; i++)
-	{
-		cout << (int)(*bb) <<" ";
-	}
-	bb--;
-	bb++;
-	delete[] bb;
+
+
+
+	int a[] = { 1, 2, 3, 4, 5};
+	CMyList list1(a, sizeof(a) / sizeof(int));
+	list1.Print();
+	list1.Joseph(1);
 	system("pause");
 }
