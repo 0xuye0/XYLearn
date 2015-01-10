@@ -1,4 +1,3 @@
 LinkList
-========
 
-a linklist written by cpp for learning data structure and git
+a linklist written by c++ for learning data structure and git
