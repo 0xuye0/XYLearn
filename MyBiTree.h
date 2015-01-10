@@ -1,25 +1,22 @@
 #pragma once
-class CMyBiTree
-{
+class CMyBiTree {
 public:
-	struct BiNode;
+	CMyBiTree();
+	CMyBiTree(int a[]);
+    void PreOrder();
+    void InOrder();
+	void PostOrder();
+	void LevelOrder();
+	~CMyBiTree();
 private:
-	void Create(int a[], BiNode* &R, int i);
-
-public:
-	struct BiNode
-	{
+	struct BiNode {
 		int data;
 		BiNode *lch;
 		BiNode *rch;
-	}*root;
-	CMyBiTree();
-	CMyBiTree(int a[]);
-	void PreOrder(BiNode *R);
-	void InOrder(BiNode* R);
-	void PostOrder(BiNode* R);
-	void LevelOrder(BiNode* R);
-	~CMyBiTree();
-
+	} *root;
+	void Create(int a[], BiNode* &R, int i);
+	void preorder(BiNode *R);
+	void inorder(BiNode* R);
+    void postorder(BiNode* R);
+    void levelorder(BiNode* R);
 };
-

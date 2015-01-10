@@ -10,4 +10,4 @@ MyLinkList : MyLinkList.h
 MyList : MyList.h
 	g++ -c MyList.cpp
 clean :
-	rm main $(object)
+	-rm main $(object)

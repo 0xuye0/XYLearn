@@ -6,8 +6,7 @@
 #include <fstream>
 #include <string>
 using namespace std;
-int main()
-{
+int main() {
 //    int a[] = { 1 ,2,3,4,5};
 //    int b[] = { 7, 8, 9, 10 };
 //    CMyCircleList list1(a, sizeof(a) / sizeof(int));
@@ -36,9 +35,13 @@ int main()
 //    cout << list1.GetLength() << endl;
 //    list1.reverse();
 //    list1.Print();*/
-    //int a[] = {  1, 2, 3, 4, 5, 6, 0, 0, 0, 7,0,0,0,0,0,0,0,0,0,0,0};
-    //CMyBiTree tree1 = a;
-    //tree1.PreOrder(tree1.root);
+    int b[] = {  1, 2, 3, 4, 5, 6, 0, 0, 0, 7,0,0,0,0,0,0,0,0,0,0,0};
+    CMyBiTree tree1 = b;
+    cout << "PreOrder:" << endl;
+    tree1.PreOrder();
+    cout << endl << "InOrder:" << endl;
+    tree1.InOrder();
+    cout << endl;
 
     //char tt[] = "a.txt";
     //ifstream at(tt);
@@ -68,6 +71,8 @@ int main()
 
     int a[] = { 1, 2, 3, 4, 5};
     CMyList list1(a, sizeof(a) / sizeof(int));
+    list1.Insert(0,0);
+    list1.Delete(2);
     list1.Print();
     // list1.Joseph(1);
     return 0;
