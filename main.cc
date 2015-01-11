@@ -7,7 +7,6 @@
 #include <string>
 using namespace std;
 int main() {
-
 //    int a[] = { 1 ,2,3,4,5};
 //    int b[] = { 7, 8, 9, 10 };
 //    CMyCircleList list1(a, sizeof(a) / sizeof(int));
