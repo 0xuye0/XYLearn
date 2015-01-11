@@ -1,0 +1,17 @@
+import glob
+
+Import('env')
+
+cpp_files = glob.glob('*.cpp')
+
+needed_libs = [
+        ]
+
+env.Program('main',
+        [
+        '#data_structure/main.cc',
+        needed_libs,
+        cpp_files,
+        ],
+        )
+
