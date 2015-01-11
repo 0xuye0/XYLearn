@@ -1,5 +1,7 @@
 #include "MyBiTree.h"
 #include <iostream>
+#include <stack>
+#include <utility>
 using namespace std;
 CMyBiTree::CMyBiTree() {
 }
@@ -35,6 +37,23 @@ void CMyBiTree::preorder(BiNode* R) {
 	}
 }
 
+void CMyBiTree::PreOrder_n() {
+    stack<BiNode*> s;
+    BiNode* r = root;
+    while (r != NULL || !s.empty()) {
+        while (r != NULL) {
+            cout << r->data;
+            s.push(r);
+            r = r->lch;
+        }
+        if (!s.empty()) {
+            r = s.top();
+            s.pop();
+            r = r->rch;
+        }
+    }
+}
+
 void CMyBiTree::InOrder() {
     inorder(this->root);
 }
@@ -46,3 +65,56 @@ void CMyBiTree::inorder(BiNode* R) {
         inorder(R->rch);
     }
 }
+
+void CMyBiTree::InOrder_n() {
+    stack<BiNode*> s;
+    BiNode* r = root;
+    while (r != NULL || !s.empty()) {
+        while (r != NULL) {
+            s.push(r);
+            r = r->lch;
+        }
+        if (!s.empty()) {
+            r = s.top();
+            s.pop();
+            cout << r->data;
+            r = r->rch;
+        }
+    }
+}
+
+void CMyBiTree::PostOrder() {
+    postorder(this->root);
+}
+
+void CMyBiTree::postorder(BiNode* p) {
+    if (p) {
+        postorder(p->lch);
+        postorder(p->rch);
+        cout << p->data;
+    }
+}
+void CMyBiTree::PostOrder_n() {
+    stack<pair<BiNode*, int> > s;
+    BiNode* r = root;
+    while (r != NULL || !s.empty()) {
+        while (r != NULL) {
+            s.push(make_pair(r,0));
+            r = r->lch;
+        }
+        if (!s.empty()) {
+            pair<BiNode*, int> p = s.top();
+            if (p.second == 0) {
+                r = (p.first)->rch;
+                p.second = 1;
+                s.pop();
+                s.push(p);
+            } else {
+                cout << (p.first)->data;
+                s.pop();
+            }
+        }
+    }
+}
+
+

@@ -37,10 +37,18 @@ int main() {
 //    list1.Print();*/
     int b[] = {  1, 2, 3, 4, 5, 6, 0, 0, 0, 7,0,0,0,0,0,0,0,0,0,0,0};
     CMyBiTree tree1 = b;
-    cout << "PreOrder:" << endl;
+    cout << "PreOrder_n:" << endl;
+    tree1.PreOrder_n();
+    cout << endl << "PreOrder:" << endl;
     tree1.PreOrder();
+    cout << endl << "InOrder_n:" << endl;
+    tree1.InOrder_n();
     cout << endl << "InOrder:" << endl;
     tree1.InOrder();
+    cout << endl << "PostOrder:" << endl;
+    tree1.PostOrder();
+    cout << endl << "PostOrder_n:" << endl;
+    tree1.PostOrder_n();
     cout << endl;
 
     //char tt[] = "a.txt";

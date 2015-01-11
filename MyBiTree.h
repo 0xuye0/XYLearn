@@ -3,8 +3,11 @@ class CMyBiTree {
 public:
 	CMyBiTree();
 	CMyBiTree(int a[]);
+    void PreOrder_n();
     void PreOrder();
+    void InOrder_n();
     void InOrder();
+    void PostOrder_n();
 	void PostOrder();
 	void LevelOrder();
 	~CMyBiTree();
