@@ -1,3 +1,1 @@
-LinkList
-
-a linklist written by c++ for learning data structure and git
+Learn data structure and basic algorithms, working hard!!
