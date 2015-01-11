@@ -51,30 +51,6 @@ int main() {
     tree1.PostOrder_n();
     cout << endl;
 
-    //char tt[] = "a.txt";
-    //ifstream at(tt);
-    //
-    //while (at.good())
-    //{
-    //    string b;
-    //    //at >> b;
-    //
-    //    getline(at, b);
-    //    /*char b;
-    //    at.get(b);*/
-    //    cout << b << "@" << endl;
-    //    ios::pos_type a = at.tellg();
-    //    at.seekg(a+ios::pos_type(3));
-    //    cout << a << endl;
-    //
-    //
-    //    /*cout << at.beg << endl;
-    //    cout << at.cur << endl;
-    //    cout << at.end << endl;
-    //    cout << at.eof() << endl;*/
-    //}
-    //cout << sizeof(ios::pos_type) << endl;
-
 
 
     int a[] = { 1, 2, 3, 4, 5};
