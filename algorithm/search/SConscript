@@ -1,0 +1,7 @@
+import glob
+
+Import('env')
+
+cpp_files = glob.glob('*.cpp')
+
+env.StaticLibrary('search.a', cpp_files)

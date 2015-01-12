@@ -3,9 +3,11 @@ import glob
 Import('env')
 
 SConscript('#algorithm/sort/SConscript')
+SConscript('#algorithm/search/SConscript')
 
 needed_libs = [
-        '#algorithm/sort/sort.a'
+        '#algorithm/sort/sort.a',
+        '#algorithm/search/search.a',
         ]
 
 env.Program('main',
