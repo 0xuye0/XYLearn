@@ -35,7 +35,9 @@ int main() {
 //    cout << list1.GetLength() << endl;
 //    list1.reverse();
 //    list1.Print();*/
-    int b[] = {  1, 2, 3, 4, 5, 6, 0, 0, 0, 7,0,0,0,0,0,0,0,0,0,0,0};
+    int b[] = {1, 2, 3, 4, 5, 6, 0, 0, 0, 7,
+               0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0};
     CMyBiTree tree1 = b;
     cout << "PreOrder_n:" << endl;
     tree1.PreOrder_n();
