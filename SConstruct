@@ -21,3 +21,4 @@ Export('env')
 
 SConscript('#data_structure/SConscript')
 SConscript('#algorithm/SConscript')
+SConscript('#test/SConscript')
