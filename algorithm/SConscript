@@ -4,6 +4,7 @@ Import('env')
 
 SConscript('#algorithm/sort/SConscript')
 SConscript('#algorithm/search/SConscript')
+SConscript('#algorithm/MultiLarge/SConscript')
 
 needed_libs = [
         '#algorithm/sort/sort.a',

@@ -1,0 +1,9 @@
+import glob
+
+Import('env')
+
+env.Program('MultiLarge',
+        [
+        '#algorithm/MultiLarge/MultiLarge.cc',
+        ],
+        )
