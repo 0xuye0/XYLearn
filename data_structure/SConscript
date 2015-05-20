@@ -14,4 +14,8 @@ env.Program('main',
         cpp_files,
         ],
         )
-
+env.StaticLibrary('MyBiTree.a', 
+        [
+        '#data_structure/MyBiTree.cpp',
+        ],
+        )

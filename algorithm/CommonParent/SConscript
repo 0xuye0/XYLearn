@@ -1,0 +1,14 @@
+import glob
+
+Import('env')
+
+needed_libs = [
+        '#data_structure/MyBiTree.a',
+        ]
+
+env.Program('CommonParent',
+        [
+        '#algorithm/CommonParent/CommonParent.cc',
+        needed_libs,
+        ],
+        )

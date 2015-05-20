@@ -3,7 +3,7 @@ env = Environment()
 debug = ARGUMENTS.get('debug', 1)
 
 if int(debug):
-    env['CCFLAGS'] = '-std=c++0x -Wall -g -fPIC'
+    env['CCFLAGS'] = '-std=c99 -Wall -g -fPIC'
 else:
     env['CCFLAGS'] = '-std=c++0x -Wall -O3 -fPIC'
 

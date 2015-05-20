@@ -4,6 +4,7 @@
 #include <utility>
 using namespace std;
 CMyBiTree::CMyBiTree() {
+    root = NULL;
 }
 
 CMyBiTree::CMyBiTree(int a[]) {

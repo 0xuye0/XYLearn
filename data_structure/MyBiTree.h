@@ -1,6 +1,12 @@
 #pragma once
+struct BiNode {
+	int data;
+	BiNode *lch;
+	BiNode *rch;
+};
 class CMyBiTree {
 public:
+    BiNode* root;
 	CMyBiTree();
 	CMyBiTree(int a[]);
     void PreOrder_n();
@@ -12,11 +18,6 @@ public:
 	void LevelOrder();
 	~CMyBiTree();
 private:
-	struct BiNode {
-		int data;
-		BiNode *lch;
-		BiNode *rch;
-	} *root;
 	void Create(int a[], BiNode* &R, int i);
 	void preorder(BiNode *R);
 	void inorder(BiNode* R);
