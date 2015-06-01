@@ -10,18 +10,15 @@ bool findpath(BiNode* root, vector<BiNode*>& path, int value) {
     path.push_back(root);
     if (root->data == value) {
         return true;
-    } else {
-        if (findpath(root->lch, path, value)) {
-            return true;
-        } else {
-            if (findpath(root->rch, path, value)) {
-                return true;
-            } else {
-                path.pop_back();
-                return false;
-            }
-        }
-    }
+    } 
+    if (findpath(root->lch, path, value)) {
+        return true;
+    } 
+    if (findpath(root->rch, path, value)) {
+        return true;
+    } 
+    path.pop_back();
+    return false;
 }
 
 int CommonParent(BiNode* root, int val1, int val2) {
