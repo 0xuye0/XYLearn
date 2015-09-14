@@ -49,8 +49,8 @@ char* multi_large(char* s, char* t) {
 }
 
 int main() {
-    char s[] = "123438383727209398387292987377329383873873948749309498498798";
-    char t[] = "1234";
+    char s[] = "123456789";
+    char t[] = "987654321";
     cout << s << endl << t << endl;
     cout << "result:" << endl;
     char* result = multi_large(s, t);

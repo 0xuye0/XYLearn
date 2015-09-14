@@ -1,0 +1,9 @@
+import glob
+
+Import('env')
+
+env.Program('LCS',
+        [
+        '#algorithm/LCS/LCS.cc',
+        ],
+        )
